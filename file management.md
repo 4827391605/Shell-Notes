@@ -1,7 +1,6 @@
-### 2025-10-16
-
+### 2026-10-14
 # File management — Cheatsheet
-Date: 2025-10-16
+Date: 2026-10-14
 
 ## Listing files
 - ls  
@@ -153,3 +152,17 @@ Changing ownership:
 
 - tar -xzvf archive.tar.gz  
   extract gzip-compressed archive.
+
+  ## Search and Replace Text
+
+- sed 's/colour/color/' file.txt
+- sed 's/colour/color/g' file.txt
+- sed -i 's/colour/color/g' file.txt
+- sed -n '8p' file.txt
+- sed -n '6,12p' file.txt
+- sed '/^#/d' file.txt
+- sed '/^$/d' file.txt
+- sed '3d' file.txt
+- sed 's/[0-9]//g' file.txt
+- sed 's/.*/[&]/' file.txt
+ 
